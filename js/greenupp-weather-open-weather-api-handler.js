@@ -50,7 +50,7 @@ function setPosition(position) {
 function showError(error) {
 //   notificationELement.style.display = "block";
 //   notificationELement.innerHTML = `<p>${error.message}</p>`;
-  M.toast({html: error.message})
+  //M.toast({html: error.message})
 }
 
 // GET WEATHER
