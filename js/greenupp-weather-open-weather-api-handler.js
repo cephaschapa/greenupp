@@ -48,8 +48,9 @@ function setPosition(position) {
 
 // SHOW GEO LOCATION ERROR
 function showError(error) {
-  notificationELement.style.display = "block";
-  notificationELement.innerHTML = `<p>${error.message}</p>`;
+//   notificationELement.style.display = "block";
+//   notificationELement.innerHTML = `<p>${error.message}</p>`;
+  M.toast({html: error.message})
 }
 
 // GET WEATHER
