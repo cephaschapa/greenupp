@@ -1,0 +1,232 @@
+/* html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+body {
+  font-family: "Quicksand", sans-serif !important;
+}
+.main-header {
+  background: url("/img/variety-of-green-vegetables-2280567.jpg") fixed
+    no-repeat center;
+  /* background-size: cover; */
+  min-height: 100vh;
+}
+#active {
+  background: #1dd1a1;
+  color: #fff !important;
+}
+#active i {
+  color: #fff !important;
+}
+#active:hover {
+  background: #1dd1a1 !important;
+}
+.main-header .brand-logo {
+}
+.main-header a {
+  color: #16a085 !important;
+  border-radius: 50px;
+}
+.header-jumbo {
+  background-color: #1dd1a1 !important;
+  padding: 20px;
+  border-radius: 30px;
+  border-top-left-radius: 0px;
+  position: relative !important;
+  top: -20px !important;
+}
+.main-header .brand-logo:hover {
+  background: none !important;
+}
+.main-header .btn:hover {
+  background: #16a085 !important;
+  color: #fff;
+}
+.main-header a:hover {
+  background: #f9f9f9 !important;
+  border-radius: 50px;
+}
+.main-header .material-icons {
+  color: #16a085 !important;
+}
+.main-header .showcase {
+  padding-top: 50px;
+}
+/* .active-link{
+  border-top: 2px solid #16a085 !important;
+  color: #fff !important;
+ } */
+.transparent {
+  height: 80px !important;
+  padding-top: 7px;
+  background: #fff !important;
+}
+.about-text {
+  position: relative;
+}
+.nav-wrapper .responsive-img {
+  width: 180px;
+  position: relative;
+  top: -1px;
+}
+.showcase h2 {
+  border-left-color: #fff !important;
+  color: #16a085 !important;
+}
+
+.text-column {
+  background: #16a085;
+  min-height: 300px !important;
+}
+.intel {
+  background: url("../img/plant_leaf_with_disease.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 300px !important;
+}
+.market {
+  background: url("../img/woman-holding-card-while-operating-silver-laptop-919436.jpg")
+    no-repeat center;
+  background-size: cover;
+  min-height: 300px !important;
+}
+.engine {
+  background: url("../img/low-angle-view-of-spiral-staircase-against-black-background-247676.jpg")
+    no-repeat center;
+  background-size: cover;
+  min-height: 300px !important;
+}
+.weather {
+  background: url("../img/weather.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 300px !important;
+}
+
+.showcase .scroll-icon {
+  height: 50px !important;
+  width: 80px !important;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background: none;
+}
+
+.collapsible i {
+  color: #16a085;
+}
+.section-faq h4 {
+  color: #16a085 !important;
+}
+.section-faq span {
+  color: #a6a6a6 !important;
+}
+.about-showcase {
+  background-size: cover;
+  height: 500px;
+}
+.Intellignose-jumbotron {
+  height: 100vh !important;
+  background: url("../img/green-leaf-plant-beside-tree-1645226.jpg") fixed;
+  background-size: cover;
+}
+.Intellignose-jumbo {
+  min-height: 100vh !important;
+  background: #f9f9f9;
+}
+.section-search {
+  background: #1dd1a1;
+}
+.section-search .input-field {
+  width: 100%;
+}
+.section-search input {
+  background: #fff !important;
+  border-radius: 50px !important;
+  border: none !important;
+  /* padding-left: 30px !important; */
+}
+.section-search {
+  color: #fff;
+}
+.input-field label {
+  margin-top: -2px;
+}
+.section-search button {
+  display: none;
+}
+.faq-showcase {
+  height: 400px;
+}
+.section-mission {
+  background: #16a085;
+}
+.section-aim {
+  background: #1dd1a1 !important;
+}
+.spy-content {
+  background: #fff !important;
+  height: 300px !important;
+}
+.spy-content li a {
+  color: #a6a6a6 !important;
+}
+.section-team p {
+  color: #a6a6a6 !important;
+}
+.section-team h3 {
+  color: #16a085 !important;
+}
+blockquote {
+  border-left-color: #16a085 !important;
+  font-size: 3rem;
+}
+.jumbo-text {
+  border-left: 5px solid #16a085;
+  border-right: none;
+  padding-left: 10px;
+}
+.showcase .scroll-icon i {
+  color: #fff !important;
+}
+.showcase .scroll-icon:hover {
+  background: #16a085;
+  color: #fff;
+  border: none;
+}
+.mid-btn {
+  position: relative !important;
+  top: -20px;
+}
+.mid-btn a:hover {
+  background: none !important;
+}
+.showcase .card {
+  border-radius: 50px;
+  padding-bottom: 50px;
+}
+.chat {
+  background: url("../img/blur-cellphone-close-up-device-369376.jpg") no-repeat
+    center;
+  background-size: cover;
+  min-height: 300px !important;
+}
+.fixed-action-btn .btn-floating {
+  background: #16a085 !important;
+}
+.section-news h2 {
+  color: #16a085 !important;
+}
+.page-footer {
+  background: #1dd1a1 !important;
+}
+.footer-copyright {
+  background: #16a085 !important;
+  padding-top: 40px !important;
+}
+.footer-copyright button {
+  border: 2px solid #1dd1a1 !important;
+  background: none;
+}
+
+/* Modals */
+.modal {
+  margin-top: 50px;
+  border-radius: 30px;
+}

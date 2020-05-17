@@ -1,0 +1,139 @@
+/* Global Styling */
+body {
+  background: url("../img/top-view-photo-of-cropland-1573885.jpg") no-repeat
+    center fixed;
+  background-size: cover;
+}
+/* ---------------------- */
+.weather-search-bar {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  padding: 2px !important;
+  border-radius: 30px;
+  margin-bottom: 0px;
+}
+.weather-search-bar .input-field {
+  margin-top: -11px !important;
+}
+.sign-in-div {
+  position: relative;
+  top: -75px !important;
+}
+
+#section-weather-header {
+  background-color: #16a085;
+  color: #fff;
+  border-radius: 0px;
+  margin-top: -13px;
+  padding-top: 10px;
+}
+.weather-search-bar .card {
+  border-radius: 30px;
+  height: 60px;
+}
+.weather-bit {
+  text-align: center;
+}
+.weather-bit li {
+  display: inline;
+  margin: 20px;
+}
+.weather-nav-main {
+  background: #f1f2f6 !important;
+  height: auto;
+  width: 100%;
+  height: auto;
+  padding: 10px !important;
+}
+
+.collection {
+  border: none;
+}
+.collection-item {
+}
+.weather-report {
+  width: 100%;
+  height: auto;
+}
+
+.card-tabs .tabs {
+  background: #16a085;
+  border-radius: 30px;
+  border: 2px solid #16a085;
+}
+#side-nav-mobile {
+  z-index: 9999;
+}
+
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  will-change: right, left;
+  border-radius: 30px;
+}
+
+.tabs .tab a {
+  color: #7bed9f !important;
+  z-index: 10;
+  position: relative;
+}
+
+.tabs li a {
+  color: #7bed9f !important;
+}
+
+#tabs-swipe a {
+  color: #7bed9f !important;
+  z-index: 10;
+  position: relative;
+}
+.weather-report .card {
+  border-radius: 30px;
+}
+.card-content {
+  border-radius: 30px !important;
+  margin-top: 10px;
+}
+.row .col.s4 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.section-weather {
+}
+.switch-temp-btn {
+}
+.weather-report {
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+}
+.temperature-value {
+  align-items: center;
+  font-size: 40px;
+  counter-reset: #16a085;
+}
+.location {
+  color: #16a085 !important;
+}
+.weather-cards {
+  margin: 2px;
+}
+.temperature-value {
+  color: #16a085;
+}
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
+  /* transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s; */
+  position: relative;
+  top: 40px !important;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.collection-item .circle {
+  background: #16a085 !important;
+}

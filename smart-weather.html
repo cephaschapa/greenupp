@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/sytle-weather.css" />
+    <script
+      src="https://kit.fontawesome.com/56243af117.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>greenupp</title>
+    <style>
+      .main-header {
+        min-height: 0vh !important;
+      }
+      .container {
+        /* padding-left: 5px !important;
+        padding-right: 2px !important; */
+      }
+      .valudate{
+        border-bottom: 3px #a6a6a6;
+        width: 100% !important;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <nav class="transparent">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo"
+              ><img src="img/logo.png" alt="" class="responsive-img"
+            /></a>
+                     
+            <a
+              href="#"
+              data-activates="side-nav-mobile"
+              class="button-collapse"
+            >
+              <i class="material-icons">menu</i>
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a class="active-link white-text" href="index.html">HOME</a>
+              </li>
+                        
+                <a
+                  href="#login-modal"
+                  class="btn btn-large modal-trigger z-depth-0"
+                  style="
+                    background: none !important;
+                    border: 2px solid #16a085 !important;
+                    border-radius: 50px;
+                  "
+                  >SIGN IN</a
+                >
+              </li>
+              <a
+                href="#"
+                data-activates="side-nav-desktop"
+                class="right button-collapse show-on-large"
+              >
+                <i class="material-icons green-text">menu</i>
+              </a>
+            </ul>
+        
+            <ul id="side-nav-mobile" class="side-nav">
+              <div class="user-view">
+                <img src="img/logo.png" alt="" class="responsive-img" />
+              </div>
+              <div class="divider"></div>
+              <li><a class="subheader">Menu </a></li>
+              <li>
+                <a href="index.html">
+                  <i class="material-icons">home</i> Home
+                </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  <i class="material-icons">info</i> About
+                </a>
+              </li>
+              <li>
+                <a href="#features">
+                  <i class="material-icons">apps</i> Features
+                </a>
+              </li>
+              <li>
+                <a href="#news"
+                  ><i class="material-icons">chrome_reader_mode</i>News &
+                  Updates</a
+                >
+              </li>
+              <li>
+                <a href="faq.html">
+                  <i class="material-icons">question_answer</i> FAQ</a
+                >
+              </li>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <li>
+                <a class="subheader">Explore Features</a>
+              </li>
+              <li>
+                <a href="intell-pre.html">
+                  <i class="material-icons">timeline</i> Intellignose
+                </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  <i class="material-icons">store</i> Green Market
+                </a>
+              </li>
+              <li>
+                <a href="#comments" id="active">
+                  <i class="material-icons">wb_iridescent</i> Smart Weather
+                </a>
+              </li>
+              <li>
+                <a href="#comments">
+                  <i class="material-icons">memory</i> DIREx Engine
+                </a>
+              </li>
+              <li>
+                <a href="#comments">
+                  <i class="material-icons">textsms</i> Green Chat
+                </a>
+              </li>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <li>
+                <a class="subheader">Account Controls</a>
+              </li>
+              <li>
+                <a href="login.html" class="waves-effect">Sign In</a>
+              </li>
+              <li>
+                <a href="login.html" class="waves-effect">Sign Up</a>
+              </li>
+            </ul>
+            <ul id="side-nav-desktop" class="side-nav hide-on-med-and-down">
+              <div class="user-view">
+                <img src="img/logo.png" alt="" class="responsive-img" />
+              </div>
+              <div class="divider"></div>
+              <li>
+                <a class="subheader">Explore Features</a>
+              </li>
+              <li>
+                <a href="intell-pre.html">
+                  <i class="material-icons">timeline</i> Intellignose
+                </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  <i class="material-icons">store</i> Green Market
+                </a>
+              </li>
+              <li>
+                <a href="#comments" id="active">
+                  <i class="material-icons">wb_iridescent</i> Smart Weather
+                </a>
+              </li>
+              <li>
+                <a href="#comments">
+                  <i class="material-icons">memory</i> DIREx Engine
+                </a>
+              </li>
+              <li>
+                <a href="#comments">
+                  <i class="material-icons">textsms</i> Green Chat
+                </a>
+              </li>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <li>
+                <a class="subheader">Account Controls</a>
+              </li>
+              <li>
+                <a href="login.html" class="waves-effect">Sign In</a>
+              </li>
+              <li>
+                <a href="login.html" class="waves-effect">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- showcase -->
+    </header>
+    <!-- Weather Section -->
+    <section class="section section-weather">
+      <div class="container">
+       
+        <div class="row">
+          <div class="col s12 weather-search-bar">
+            <div class="card">
+              <div class="card-content">
+                <form class="col s12">
+                  <div class="input-field col s4">
+                    <i class="material-icons prefix">search</i>
+                    <input id="icon_prefix" type="text" class="validate" style="border-bottom:2px solid #16a085 ">
+                    <label for="icon_prefix">Type Location</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          </div>
+          <div class="row">
+            <div class="col s12 weather-nav-pane hide-on-med-and-down"></div>
+            <div class="col s12 weather-report">
+             
+             <div class="row">
+              
+              <div class="card col s12 l6 weather-card right">
+                <div class="row center">
+                  <div class="card col s12 z-depth-0" style="padding: 5px; margin-bottom: -30px;">
+                    <a class='dropdown-button btn right white waves-effect z-depth-0' style="border-radius: 30px;" href='#' data-activates='dropdown1' ><i class="material-icons grey-text">settings</i></a>
+    
+                    <ul id='dropdown1' class='dropdown-content'>
+                      <p class="grey-text center">PREFERENCES</p>
+                      <li class="divider"></li>
+                      <li class=" switch-temp-btn "><a href="#"> Fahranheit</a></li>
+                      <li><a href="#!">one</a></li>
+                      <li><a href="#!">two</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#!">Reset</a></li>
+                    </ul>
+                    
+                  
+                 </div>
+                  <div class="col s6 temperature-value center"><p></p></div>
+                  
+                  <div class="weather-icon col s6">
+                    <img src="./icons/unknown.png" alt="" />
+                  </div>
+                  <div class="row grey-text" style="font-size: 18px;">
+                    <div class="col s6 temperature-description right" ><p></p></div>
+                    <div class="col s6 feels-like left" style="margin-top: -6px;"><p></p></div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="card col s12 l5 weather-cards">
+                <div class="row">
+                  <div class="col s12 center">
+                    <div class="col s4 location grey-text"><i class="material-icons"  style="font-size: 40px; margin-top: 25px;">location_on</i><p style="font-size: 25px;"></p></div>
+                   
+                      <div class="col s4 date-time grey-text"><p></p></div>
+                    
+                  </div>
+                 
+                </div>
+                
+              </div>
+              <div class="card col s12">
+                <div class="col s12 l6">
+                  <ul class="collection">
+                    <li class="collection-item avatar humidity">
+                      <i class="material-icons circle">blur_on</i>
+                      <span class="title">Humidity</span>
+                      <p></p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar wind-speed">
+                      <i class="material-icons circle">leak_add</i>
+                      <span class="title">Wind Speed</span>
+                      <p></p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar wind-direction">
+                      <i class="material-icons circle green">explore</i>
+                      <span class="title">Wind Direction</span>
+                      <p></p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <i class="material-icons circle red">timeline</i>
+                      <span class="title">Maximun and Minimun Temperature</span>
+                     <div class="max-temperature"><p></p></div>
+                     <div class="min-temperature"><p></p></div>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col s12 l6">
+                  <ul class="collection">
+                    <li class="collection-item avatar uv-index">
+                      <i class="material-icons circle">flare</i>
+                      <span class="title">UV Intex</span>
+                      <p></p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar pressure">
+                      <i class="material-icons circle">local_parking</i>
+                      <span class="title">Pressure</span>
+                      <p></p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar sunrise">
+                      <i class="material-icons circle green">wb_sunny</i>
+                      <span class="title">Sunrise</span>
+                      <p></p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar sunset">
+                      <i class="material-icons circle red">lens</i>
+                      <span class="title">Sunrise</span>
+                     <p></p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                  </ul>
+                </div>
+                
+              </div>
+              
+            </div>
+            
+            
+          </div>
+          <div class="row">
+
+            <div class="col s12" id="weather-graphs">
+              
+            </div>
+
+            <div class="col s12" id="weather-in-other-places">
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="weather-container" style="display: none;">
+      <div class="weather-icon">
+        <img src="./icons/unknown.png" alt="" />
+      </div>
+      <div class="temperature-value"><p></p></div>
+      <div class="temperature-description"><p></p></div>
+      <div class="feels-like"></div>
+      <div class="location"><p></p></div>
+      <div class="humidity"><p></p></div>
+      <div class="pressure"><p></p></div>
+      
+      <div class="sunrise"></div>
+      <div class="sunset"></div>
+    </div>
+    <!-- Weather Section ./ -->
+    <!-- Floating action button -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large pulse">
+        <i class="large material-icons">chat</i>
+      </a>
+      <ul>
+        <li>
+          <a class="btn-floating red"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a class="btn-floating yellow darken-1"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a class="btn-floating green"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a class="btn-floating blue"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- ./ Floating action button -->
+    <!-- section icon boxes   -->
+
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m4 center">
+              Greenupp © 2019
+            </div>
+            <div class="col s12 m4 center z-depth-0">
+              <a href="#home"
+                ><button class="btn z-depth-0">
+                  Go To Top
+                  <i class="material-icons right">keyboard_arrow_up</i>
+                </button></a
+              >
+            </div>
+            <div class="col s12 m4 center">
+              <a class="grey-text text-lighten-4" href="#!"
+                >Terms and Conditions</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login modal -->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <h4 style="color: #16a085;">
+          Account Controls | <span class="grey-text"> Login </span>
+        </h4>
+        <p class="grey-text">Login to access your account dashboard</p>
+        <div class="divider"></div>
+        <form>
+          <div class="input-field">
+            <div class="prefix material-icons">email</div>
+            <input type="email" id="email" />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <div class="prefix material-icons">lock</div>
+            <input type="email" id="password" />
+            <label for="password">Password</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer center">
+        <a
+          href="#!"
+          class="modal-action modal-close btn white z-depth-0"
+          style="
+            border-radius: 50px;
+            color: #16a085;
+            border: 2px solid #16a085;
+          "
+        >
+          <i class="left material-icons">autorenew</i> Reset Password</a
+        >
+        <a
+          href="#!"
+          class="modal-action modal-close btn z-depth-0"
+          style="border-radius: 50px;"
+        >
+          <i class="left material-icons">lock_open</i>Login</a
+        >
+      </div>
+    </div>
+    <!-- ./Login modal -->
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <script src="./js/greenupp-weather-open-weather-api-handler.js"></script>
+    <script src="./js/date-handler.js"></script>
+    <script>
+      $(document).ready(function () {
+        // CUSTOM JS & JQUERY HERE //
+        $(".carousel.carousel-slider").carousel({
+          fullWidth: true,
+        });
+        $(".button-collapse").sideNav();
+        $(".side-nav-dxktop").sideNav({
+          edge: "right",
+          isOpen: true,
+          isFixed,
+        });
+        $(".modal").modal();
+        $(".scrollspy").scrollSpy();
+        $('.dropdown-button').dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            constrain_width: false, // Does not change width of dropdown to that of the activator
+            hover: true, // Activate on hover
+            gutter: 0, // Spacing from edge
+            belowOrigin: false, // Displays dropdown below the button
+            alignment: 'left' // Displays dropdown with edge aligned to the left of button
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
