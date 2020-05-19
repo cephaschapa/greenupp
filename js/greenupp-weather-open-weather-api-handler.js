@@ -17,6 +17,9 @@ const sunsetElement = document.querySelector(".sunset p");
 const windDirectionElement = document.querySelector(".wind-direction p");
 const windSpeedElement = document.querySelector(".wind-speed p");
 const switchButtonElement = document.querySelector(".switch-temp-btn");
+const dateElement = document.querySelector(".date-time");
+const latElement = document.querySelector(".lat span");
+const lonElement = document.querySelector(".lon span");
 // App data
 
 const weather = {};
@@ -48,9 +51,8 @@ function setPosition(position) {
 
 // SHOW GEO LOCATION ERROR
 function showError(error) {
-//   notificationELement.style.display = "block";
-//   notificationELement.innerHTML = `<p>${error.message}</p>`;
-  //M.toast({html: error.message})
+  notificationELement.style.display = "block";
+  notificationELement.innerHTML = `<p>${error.message}</p>`;
 }
 
 // GET WEATHER
@@ -77,8 +79,22 @@ function getWeather(latitude, longitude) {
       weather.humidity = data.main.humidity;
       weather.windSpeed = Math.floor(data.wind.speed * 3.6);
       weather.windDirection = data.wind.deg;
-      weather.sunrise = data.sys.sunrise;
-      weather.sunset = data.sys.sunset;
+      weather.lat = data.coord.lat;
+      weather.lon = data.coord.lon;
+      date = data.dt * 1000;
+      const milliseconds1 = data.dt * 1000;
+      const dateObj = new Date(milliseconds1);
+      weather.dateOfCalc = dateObj.toLocaleTimeString();
+      // convert unix to date and time
+      const milliseconds = data.sys.sunrise * 1000;
+      const dateObject = new Date(milliseconds);
+      weather.sunrise = dateObject.toLocaleTimeString();
+      //weather.sunrise = time.slice(-11, -4);
+
+      const tomilliseconds = data.sys.sunset * 1000;
+      const dateOject2 = new Date(tomilliseconds);
+      weather.sunset = dateOject2.toLocaleTimeString();
+
       if (weather.windDirection > 0 && weather.windDirection < 45) {
         weather.windDirection = "NNE";
         return weather.windDirection;
@@ -118,15 +134,18 @@ function displayWeather() {
   tempELement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
   descELement.innerHTML = weather.description;
   locationELement.innerHTML = `${weather.city}, ${weather.country}`;
-  feelsLikeElement.innerHTML = `<span>Feels Like : ${weather.feels_like}</span>`;
-  pressureElement.innerHTML = `<span>Pressure : ${weather.pressure}</span>`;
-  humidityElement.innerHTML = `<span>Humidity : ${weather.humidity}</span>`;
+  feelsLikeElement.innerHTML = `<span>Feels Like : ${weather.feels_like}°C</span>`;
+  pressureElement.innerHTML = `<span>Pressure : ${weather.pressure} Pa</span>`;
+  humidityElement.innerHTML = `<span>Humidity : ${weather.humidity}%</span>`;
   maxTempElement.innerHTML = `<span>Highs : ${weather.max_temp}</span>`;
   minTempElement.innerHTML = `<span>Lows : ${weather.min_temp}</span>`;
   windSpeedElement.innerHTML = `<span>Wind Speed : ${weather.windSpeed} Km / h</span>`;
   windDirectionElement.innerHTML = `<span>Wind Direction : ${weather.windDirection}</span>`;
   sunriseElement.innerHTML = `${weather.sunrise}`;
   sunsetElement.innerHTML = `${weather.sunset}`;
+  dateElement.innerHTML = `<i class="material-icons" style="position: relative; top:6px;">update</i>Last Update: ${weather.dateOfCalc}`;
+  latElement.innerHTML = weather.lat;
+  lonElement.innerHTML = weather.lon;
 }
 
 function celsiusToFahrenheit(temperature) {
