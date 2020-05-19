@@ -263,8 +263,12 @@
                     <img src="./icons/unknown.png" alt="" />
                   </div>
                   <div class="row grey-text" style="font-size: 18px;">
-                    <div class="col s6 temperature-description right" ><p></p></div>
-                    <div class="col s6 feels-like left" style="margin-top: -6px;"><p></p></div>
+                    <div class="row">
+                    <div class="col s5 temperature-description right  center z-depth-1" ><p></p></div>
+                    <div class="col s5 feels-like center z-depth-1" style="margin-top: -6px;"><p></p></div>
+                    </div>
+                    <div class="divider2"></div>
+                    <div class="col s12 date-time grey-text"><p></p></div>
                   </div>
                   
                 </div>
@@ -273,10 +277,19 @@
                 <div class="row">
                   <div class="col s12 center">
                     <div class="col s4 location grey-text"><i class="material-icons"  style="font-size: 40px; margin-top: 25px;">location_on</i><p style="font-size: 25px;"></p></div>
-                   
-                      <div class="col s4 date-time grey-text"><p></p></div>
+                  </div>
+                 <div class="row center">
+                  <div class="chip lat">
+                     <i class="left material-icons" style="position: relative; top:4px">border_bottom</i> Latitude <span></span>
+                    
+                    
                     
                   </div>
+                  <div class=" chip lon">
+                    <i class="left material-icons" style="position: relative; top:4px">border_left</i>Longitude <span></span>
+                   <p></p>
+                  </div>
+                 </div>
                  
                 </div>
                 
@@ -288,26 +301,30 @@
                       <i class="material-icons circle">blur_on</i>
                       <span class="title">Humidity</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
+                      </i></a>
                     </li>
                     <li class="collection-item avatar wind-speed">
                       <i class="material-icons circle">leak_add</i>
                       <span class="title">Wind Speed</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
+                      </i></a>
                     </li>
                     <li class="collection-item avatar wind-direction">
                       <i class="material-icons circle green">explore</i>
                       <span class="title">Wind Direction</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
+                      </i></a>
                     </li>
                     <li class="collection-item avatar">
                       <i class="material-icons circle red">timeline</i>
                       <span class="title">Maximun and Minimun Temperature</span>
                      <div class="max-temperature"><p></p></div>
                      <div class="min-temperature"><p></p></div>
-                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
+                      </i></a>
                     </li>
                   </ul>
                 </div>
@@ -317,25 +334,29 @@
                       <i class="material-icons circle">flare</i>
                       <span class="title">UV Intex</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
+                      </i></a>
                     </li>
                     <li class="collection-item avatar pressure">
                       <i class="material-icons circle">local_parking</i>
                       <span class="title">Pressure</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
+                      </i></a>
                     </li>
                     <li class="collection-item avatar sunrise">
                       <i class="material-icons circle green">wb_sunny</i>
                       <span class="title">Sunrise</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
+                      </i></a>
                     </li>
                     <li class="collection-item avatar sunset">
                       <i class="material-icons circle red">lens</i>
                       <span class="title">Sunrise</span>
                      <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
+                      </i></a>
                     </li>
                   </ul>
                 </div>
@@ -475,7 +496,7 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-  
+    <script type="text/javascript" src="js/test.js"></script>
     <script src="./js/greenupp-weather-open-weather-api-handler.js"></script>
     <script src="./js/date-handler.js"></script>
     <script>
@@ -488,7 +509,7 @@
         $(".side-nav-dxktop").sideNav({
           edge: "right",
           isOpen: true,
-         
+          isFixed,
         });
         $(".modal").modal();
         $(".scrollspy").scrollSpy();
