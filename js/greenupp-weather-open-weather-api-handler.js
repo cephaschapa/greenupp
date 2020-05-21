@@ -20,6 +20,7 @@ const switchButtonElement = document.querySelector(".switch-temp-btn");
 const dateElement = document.querySelector(".date-time");
 const latElement = document.querySelector(".lat span");
 const lonElement = document.querySelector(".lon span");
+const uvIndexElement = document.querySelector(".uv-index p");
 // App data
 
 const weather = {};
@@ -56,7 +57,7 @@ function showError(error) {
 }
 
 // GET WEATHER
-function getWeather(latitude, longitude) {
+function getWeather(latitude, longitude, cityid) {
   let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
   console.log(api);
 
@@ -81,7 +82,11 @@ function getWeather(latitude, longitude) {
       weather.windDirection = data.wind.deg;
       weather.lat = data.coord.lat;
       weather.lon = data.coord.lon;
-      date = data.dt * 1000;
+      weather.cityid = data.id;
+      weather.vis = data.visibility;
+      cityid = data.id;
+      console.log(weather.cityid);
+      // date = data.dt * 1000;
       const milliseconds1 = data.dt * 1000;
       const dateObj = new Date(milliseconds1);
       weather.dateOfCalc = dateObj.toLocaleTimeString();
@@ -96,38 +101,62 @@ function getWeather(latitude, longitude) {
       weather.sunset = dateOject2.toLocaleTimeString();
 
       if (weather.windDirection > 0 && weather.windDirection < 45) {
-        weather.windDirection = "NNE";
+        weather.windDirection = "Due NNE";
         return weather.windDirection;
       } else if (weather.windDirection > 45 && weather.windDirection < 90) {
-        weather.windDirection = "NEE";
+        weather.windDirection = "Due NEE";
         return weather.windDirection;
       } else if (weather.windDirection == 90) {
         weather.windDirection = "Due East";
         return weather.windDirection;
       } else if (weather.windDirection > 90 && weather.windDirection < 135) {
-        weather.windDirection = "SE";
+        weather.windDirection = "Due SE";
         return weather.windDirection;
       } else if (weather.windDirection > 135 && weather.windDirection < 180) {
-        weather.windDirection = "SSE";
+        weather.windDirection = "Due SSE";
         return weather.windDirection;
       } else if (weather.windDirection > 180 && weather.windDirection < 225) {
-        weather.windDirection = "SSW";
+        weather.windDirection = "Due SSW";
         return weather.windDirection;
       } else if (weather.windDirection > 225 && weather.windDirection < 270) {
-        weather.windDirection = "SWW";
+        weather.windDirection = "Due SWW";
         return weather.windDirection;
       } else if (weather.windDirection > 270 && weather.windDirection < 315) {
-        weather.windDirection = "NWW";
+        weather.windDirection = "Due NWW";
         return weather.windDirection;
       } else if (weather.windDirection > 315 && weather.windDirection < 360) {
-        weather.windDirection = "NW";
+        weather.windDirection = "Due NW";
         return weather.windDirection;
       }
+      return cityid;
     })
     .then(function () {
       displayWeather();
+
+      return cityid;
+    })
+    .then(function () {
+      getbyId();
     });
+  console.log(cityid);
 }
+console.log(weather.cityid);
+function getbyId(cityID) {
+  cityID = weather.cityid;
+  let cityApi = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${key}`;
+  fetch(cityApi)
+    .then(function (response) {
+      let data = response.json();
+      console.log(data);
+      return data;
+    })
+    .then(function (data) {
+      weather.visibility = data.visibility;
+      console.log(weather.visibility);
+    });
+  console.log(`${cityApi}`);
+}
+console.log(getbyId());
 
 function displayWeather() {
   iconELement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
@@ -146,6 +175,7 @@ function displayWeather() {
   dateElement.innerHTML = `<i class="material-icons" style="position: relative; top:6px;">update</i>Last Update: ${weather.dateOfCalc}`;
   latElement.innerHTML = weather.lat;
   lonElement.innerHTML = weather.lon;
+  uvIndexElement.innerHTML = `${weather.vis} m`;
 }
 
 function celsiusToFahrenheit(temperature) {
