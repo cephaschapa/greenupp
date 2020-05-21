@@ -259,7 +259,8 @@
                  </div>
                   <div class="col s6 temperature-value center"><p></p></div>
                   
-                  <div class="weather-icon col s6">
+                  <div class="weather-icon col s6" style="position: relative !important; top: 10px;">
+                    <br><br>
                     <img src="./icons/unknown.png" alt="" />
                   </div>
                   <div class="row grey-text" style="font-size: 18px;">
@@ -332,7 +333,7 @@
                   <ul class="collection">
                     <li class="collection-item avatar uv-index">
                       <i class="material-icons circle">flare</i>
-                      <span class="title">UV Intex</span>
+                      <span class="title">Visibility</span>
                       <p></p>
                       <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
                       </i></a>
@@ -509,7 +510,7 @@
         $(".side-nav-dxktop").sideNav({
           edge: "right",
           isOpen: true,
-          isFixed,
+         
         });
         $(".modal").modal();
         $(".scrollspy").scrollSpy();
