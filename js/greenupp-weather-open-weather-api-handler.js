@@ -135,28 +135,10 @@ function getWeather(latitude, longitude, cityid) {
 
       return cityid;
     })
-    .then(function () {
-      getbyId();
-    });
+    .then(function () {});
   console.log(cityid);
 }
 console.log(weather.cityid);
-function getbyId(cityID) {
-  cityID = weather.cityid;
-  let cityApi = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&appid=${key}`;
-  fetch(cityApi)
-    .then(function (response) {
-      let data = response.json();
-      console.log(data);
-      return data;
-    })
-    .then(function (data) {
-      weather.visibility = data.visibility;
-      console.log(weather.visibility);
-    });
-  console.log(`${cityApi}`);
-}
-console.log(getbyId());
 
 function displayWeather() {
   iconELement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;

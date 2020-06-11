@@ -36,11 +36,10 @@
         /* padding-left: 5px !important;
         padding-right: 2px !important; */
       }
-      .valudate{
+      .valudate {
         border-bottom: 3px #a6a6a6;
         width: 100% !important;
       }
-      
     </style>
   </head>
 
@@ -52,7 +51,7 @@
             <a href="#" class="brand-logo"
               ><img src="img/logo.png" alt="" class="responsive-img"
             /></a>
-                     
+
             <a
               href="#"
               data-activates="side-nav-mobile"
@@ -65,18 +64,18 @@
               <li>
                 <a class="active-link white-text" href="index.html">HOME</a>
               </li>
-                        
-                <a
-                  href="#login-modal"
-                  class="btn btn-large modal-trigger z-depth-0"
-                  style="
-                    background: none !important;
-                    border: 2px solid #16a085 !important;
-                    border-radius: 50px;
-                  "
-                  >SIGN IN</a
-                >
-              </li>
+
+              <a
+                href="#login-modal"
+                class="btn btn-large modal-trigger z-depth-0"
+                style="
+                  background: none !important;
+                  border: 2px solid #16a085 !important;
+                  border-radius: 50px;
+                "
+                >SIGN IN</a
+              >
+
               <a
                 href="#"
                 data-activates="side-nav-desktop"
@@ -85,7 +84,7 @@
                 <i class="material-icons green-text">menu</i>
               </a>
             </ul>
-        
+
             <ul id="side-nav-mobile" class="side-nav">
               <div class="user-view">
                 <img src="img/logo.png" alt="" class="responsive-img" />
@@ -217,7 +216,6 @@
     <!-- Weather Section -->
     <section class="section section-weather">
       <div class="container">
-       
         <div class="row">
           <div class="col s12 weather-search-bar">
             <div class="card">
@@ -225,75 +223,108 @@
                 <form class="col s12">
                   <div class="input-field col s4">
                     <i class="material-icons prefix">search</i>
-                    <input id="icon_prefix" type="text" class="validate" style="border-bottom:2px solid #16a085 ">
+                    <input
+                      id="icon_prefix"
+                      type="text"
+                      class="validate"
+                      style="border-bottom: 2px solid #16a085;"
+                    />
                     <label for="icon_prefix">Type Location</label>
                   </div>
                 </form>
               </div>
             </div>
           </div>
-
-          </div>
-          <div class="row">
-            <div class="col s12 weather-nav-pane hide-on-med-and-down"></div>
-            <div class="col s12 weather-report">
-             
-             <div class="row">
-              
+        </div>
+        <div class="row">
+          <div class="col s12 weather-nav-pane hide-on-med-and-down"></div>
+          <div class="col s12 weather-report">
+            <div class="row">
               <div class="card col s12 l6 weather-card right">
                 <div class="row center">
-                  <div class="card col s12 z-depth-0" style="padding: 5px; margin-bottom: -30px;">
-                    <a class='dropdown-button btn right white waves-effect z-depth-0' style="border-radius: 30px;" href='#' data-activates='dropdown1' ><i class="material-icons grey-text">settings</i></a>
-    
-                    <ul id='dropdown1' class='dropdown-content'>
+                  <div
+                    class="card col s12 z-depth-0"
+                    style="padding: 5px; margin-bottom: -30px;"
+                  >
+                    <a
+                      class="dropdown-button btn right white waves-effect z-depth-0"
+                      style="border-radius: 30px;"
+                      href="#"
+                      data-activates="dropdown1"
+                      ><i class="material-icons grey-text">settings</i></a
+                    >
+
+                    <ul id="dropdown1" class="dropdown-content">
                       <p class="grey-text center">PREFERENCES</p>
                       <li class="divider"></li>
-                      <li class=" switch-temp-btn "><a href="#"> Fahranheit</a></li>
+                      <li class="switch-temp-btn">
+                        <a href="#"> Fahranheit</a>
+                      </li>
                       <li><a href="#!">one</a></li>
                       <li><a href="#!">two</a></li>
                       <li class="divider"></li>
                       <li><a href="#!">Reset</a></li>
                     </ul>
-                    
-                  
-                 </div>
+                  </div>
                   <div class="col s6 temperature-value center"><p></p></div>
-                  
-                  <div class="weather-icon col s6" style="position: relative !important; top: 10px;">
-                    <br><br>
+
+                  <div
+                    class="weather-icon col s6"
+                    style="position: relative !important; top: 10px;"
+                  >
+                    <br /><br />
                     <img src="./icons/unknown.png" alt="" />
                   </div>
                   <div class="row grey-text" style="font-size: 18px;">
                     <div class="row">
-                    <div class="col s5 temperature-description right  center z-depth-1" ><p></p></div>
-                    <div class="col s5 feels-like center z-depth-1" style="margin-top: -6px;"><p></p></div>
+                      <div
+                        class="col s5 temperature-description right center z-depth-1"
+                      >
+                        <p></p>
+                      </div>
+                      <div
+                        class="col s5 feels-like center z-depth-1"
+                        style="margin-top: -6px;"
+                      >
+                        <p></p>
+                      </div>
                     </div>
                     <div class="divider2"></div>
                     <div class="col s12 date-time grey-text"><p></p></div>
                   </div>
-                  
                 </div>
               </div>
               <div class="card col s12 l5 weather-cards">
                 <div class="row">
                   <div class="col s12 center">
-                    <div class="col s4 location grey-text"><i class="material-icons"  style="font-size: 40px; margin-top: 25px;">location_on</i><p style="font-size: 25px;"></p></div>
+                    <div class="col s4 location grey-text">
+                      <i
+                        class="material-icons"
+                        style="font-size: 40px; margin-top: 25px;"
+                        >location_on</i
+                      >
+                      <p style="font-size: 25px;"></p>
+                    </div>
                   </div>
-                 <div class="row center">
-                  <div class="chip lat">
-                     <i class="left material-icons" style="position: relative; top:4px">border_bottom</i> Latitude <span></span>
-                    
-                    
-                    
+                  <div class="row center">
+                    <div class="chip lat">
+                      <i
+                        class="left material-icons"
+                        style="position: relative; top: 4px;"
+                        >border_bottom</i
+                      >
+                      Latitude <span></span>
+                    </div>
+                    <div class="chip lon">
+                      <i
+                        class="left material-icons"
+                        style="position: relative; top: 4px;"
+                        >border_left</i
+                      >Longitude <span></span>
+                      <p></p>
+                    </div>
                   </div>
-                  <div class=" chip lon">
-                    <i class="left material-icons" style="position: relative; top:4px">border_left</i>Longitude <span></span>
-                   <p></p>
-                  </div>
-                 </div>
-                 
                 </div>
-                
               </div>
               <div class="card col s12">
                 <div class="col s12 l6">
@@ -302,30 +333,34 @@
                       <i class="material-icons circle">blur_on</i>
                       <span class="title">Humidity</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
-                      </i></a>
+                      <a href="#!" class="secondary-content"
+                        ><i class="material-icons">fiber_manual_record </i></a
+                      >
                     </li>
                     <li class="collection-item avatar wind-speed">
                       <i class="material-icons circle">leak_add</i>
                       <span class="title">Wind Speed</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
-                      </i></a>
+                      <a href="#!" class="secondary-content"
+                        ><i class="material-icons">fiber_manual_record </i></a
+                      >
                     </li>
                     <li class="collection-item avatar wind-direction">
                       <i class="material-icons circle green">explore</i>
                       <span class="title">Wind Direction</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
-                      </i></a>
+                      <a href="#!" class="secondary-content"
+                        ><i class="material-icons">fiber_manual_record </i></a
+                      >
                     </li>
                     <li class="collection-item avatar">
                       <i class="material-icons circle red">timeline</i>
                       <span class="title">Maximun and Minimun Temperature</span>
-                     <div class="max-temperature"><p></p></div>
-                     <div class="min-temperature"><p></p></div>
-                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
-                      </i></a>
+                      <div class="max-temperature"><p></p></div>
+                      <div class="min-temperature"><p></p></div>
+                      <a href="#!" class="secondary-content"
+                        ><i class="material-icons">fiber_manual_record </i></a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -335,51 +370,46 @@
                       <i class="material-icons circle">flare</i>
                       <span class="title">Visibility</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
-                      </i></a>
+                      <a href="#!" class="secondary-content"
+                        ><i class="material-icons">fiber_manual_record </i></a
+                      >
                     </li>
                     <li class="collection-item avatar pressure">
                       <i class="material-icons circle">local_parking</i>
                       <span class="title">Pressure</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
-                      </i></a>
+                      <a href="#!" class="secondary-content"
+                        ><i class="material-icons">fiber_manual_record </i></a
+                      >
                     </li>
                     <li class="collection-item avatar sunrise">
                       <i class="material-icons circle green">wb_sunny</i>
                       <span class="title">Sunrise</span>
                       <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
-                      </i></a>
+                      <a href="#!" class="secondary-content"
+                        ><i class="material-icons">fiber_manual_record </i></a
+                      >
                     </li>
                     <li class="collection-item avatar sunset">
                       <i class="material-icons circle red">lens</i>
                       <span class="title">Sunrise</span>
-                     <p></p>
-                      <a href="#!" class="secondary-content"><i class="material-icons">fiber_manual_record
-                      </i></a>
+                      <p></p>
+                      <a href="#!" class="secondary-content"
+                        ><i class="material-icons">fiber_manual_record </i></a
+                      >
                     </li>
                   </ul>
                 </div>
-                
               </div>
-              
             </div>
-            
-            
-          </div>
-          <div class="row">
-
-            <div class="col s12" id="weather-graphs">
-              
-            </div>
-
-            <div class="col s12" id="weather-in-other-places">
-              
-            </div>
-
           </div>
         </div>
+      </div>
+    </section>
+    <section class="section daily-weather">
+      <div class="container">
+        <h3 class="white-text center">8 Day Forecast</h3>
+        <div class="row daily-weather-container"></div>
       </div>
     </section>
     <div class="weather-container" style="display: none;">
@@ -392,13 +422,13 @@
       <div class="location"><p></p></div>
       <div class="humidity"><p></p></div>
       <div class="pressure"><p></p></div>
-      
+
       <div class="sunrise"></div>
       <div class="sunset"></div>
     </div>
     <!-- Weather Section ./ -->
     <!-- Floating action button -->
-    <div class="fixed-action-btn">
+    <div class="fixed-action-btn toolbar">
       <a class="btn-floating btn-large pulse">
         <i class="large material-icons">chat</i>
       </a>
@@ -420,6 +450,30 @@
       </ul>
     </div>
     <!-- ./ Floating action button -->
+    <!-- Scroll spy -->
+    <!-- <div class="row">
+      <div class="col s12 m9 l10">
+        <div id="introduction" class="section scrollspy">
+          <p>Content</p>
+        </div>
+
+        <div id="structure" class="section scrollspy">
+          <p>Content</p>
+        </div>
+
+        <div id="initialization" class="section scrollspy">
+          <p>Content</p>
+        </div>
+      </div>
+      <div class="col hide-on-small-only m3 l2">
+        <ul class="section table-of-contents">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#structure">Structure</a></li>
+          <li><a href="#initialization">Intialization</a></li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- ./Scroll spy-->
     <!-- section icon boxes   -->
 
     <footer class="page-footer">
@@ -497,33 +551,30 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/test.js"></script>
     <script src="./js/greenupp-weather-open-weather-api-handler.js"></script>
+    <script src="./js/get-hourly-weather.js"></script>
     <script src="./js/date-handler.js"></script>
     <script>
       $(document).ready(function () {
         // CUSTOM JS & JQUERY HERE //
-        $(".carousel.carousel-slider").carousel({
-          fullWidth: true,
-        });
+
         $(".button-collapse").sideNav();
-        $(".side-nav-dxktop").sideNav({
-          edge: "right",
-          isOpen: true,
-         
-        });
+        $(".side-nav-dxktop").sideNav();
         $(".modal").modal();
         $(".scrollspy").scrollSpy();
-        $('.dropdown-button').dropdown({
-            inDuration: 300,
-            outDuration: 225,
-            constrain_width: false, // Does not change width of dropdown to that of the activator
-            hover: true, // Activate on hover
-            gutter: 0, // Spacing from edge
-            belowOrigin: false, // Displays dropdown below the button
-            alignment: 'left' // Displays dropdown with edge aligned to the left of button
-          }
-        );
+        $(".dropdown-button").dropdown({
+          inDuration: 300,
+          outDuration: 225,
+          constrain_width: false, // Does not change width of dropdown to that of the activator
+          hover: true, // Activate on hover
+          gutter: 0, // Spacing from edge
+          belowOrigin: false, // Displays dropdown below the button
+          alignment: "left", // Displays dropdown with edge aligned to the left of button
+        });
+        $(document).ready(function () {
+          $(".scrollspy").scrollSpy();
+        });
+        $(".carousel").carousel();
       });
     </script>
   </body>
