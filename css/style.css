@@ -2,13 +2,19 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 } */
 body {
-  font-family: "Quicksand", sans-serif !important;
+  /* font-family: "Quicksand", sans-serif !important; */
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+  
+  width: 95% !important;
 }
 .main-header {
-  background: url("/img/variety-of-green-vegetables-2280567.jpg") fixed
-    no-repeat center;
-  /* background-size: cover; */
-  min-height: 100vh;
+  background: url("../img/variety-of-green-vegetables-2280567.jpg") fixed
+    no-repeat center; 
+  background-size: cover;
+  background-color: #16a085;
+  max-height: 135vh;
 }
 #active {
   background: #1dd1a1;
@@ -60,6 +66,10 @@ body {
   padding-top: 7px;
   background: #fff !important;
 }
+#particles-js canvas{
+  position: relative;
+  top: -130vh;
+}
 .about-text {
   position: relative;
 }
@@ -70,7 +80,7 @@ body {
 }
 .showcase h2 {
   border-left-color: #fff !important;
-  color: #16a085 !important;
+  /* color: #16a085 !important; */
 }
 
 .text-column {
@@ -107,7 +117,14 @@ body {
   border: 2px solid #fff;
   background: none;
 }
-
+.showcase{
+  max-height: 500px !important;
+}
+.curves{
+  position: relative;
+  top: -50px;
+  z-index: 1;
+}
 .collapsible i {
   color: #16a085;
 }
@@ -200,6 +217,12 @@ blockquote {
 .showcase .card {
   border-radius: 50px;
   padding-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+.side-nav-mobile{
+  position: relative;
+  z-index: 9999 !important;
 }
 .chat {
   background: url("../img/blur-cellphone-close-up-device-369376.jpg") no-repeat
@@ -211,7 +234,7 @@ blockquote {
   background: #16a085 !important;
 }
 .section-news h2 {
-  color: #16a085 !important;
+  /* color: #16a085 !important; */
 }
 .page-footer {
   background: #1dd1a1 !important;

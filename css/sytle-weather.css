@@ -3,6 +3,7 @@ body {
   background: url("../img/top-view-photo-of-cropland-1573885.jpg") no-repeat
     center fixed;
   background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {
